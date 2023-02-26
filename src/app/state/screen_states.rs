@@ -455,10 +455,7 @@ mod tests {
         let next = &artist_state.next_page;
         assert_eq!(Some(20), next.next_offset);
 
-        artist_state.update_with(Cow::Owned(BrowserAction::AppendArtistReleases(
-            id.clone(),
-            vec![],
-        )));
+        artist_state.update_with(Cow::Owned(BrowserAction::AppendArtistReleases(id, vec![])));
 
         let next = &artist_state.next_page;
         assert_eq!(None, next.next_offset);

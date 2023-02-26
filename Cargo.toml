@@ -7,7 +7,7 @@ license = "MIT"
 [dependencies.gtk]
 version = "^0.6.0"
 package = "gtk4"
-features = ["gnome_42", "blueprint"]
+features = ["gnome_43", "blueprint"]
 
 [dependencies.gdk]
 version = "^0.6.0"
@@ -20,6 +20,10 @@ features = ["v2_60"]
 [dependencies.glib]
 version = "^0.17.0"
 features = ["v2_60"]
+
+[dependencies.libadwaita]
+version = "0.3"
+features = ["v1_2"]
 
 [dependencies.librespot]
 version = "0.4.2"
@@ -61,7 +65,6 @@ features = ["rt-async-io-crypto-rust"]
 
 [dependencies]
 gdk-pixbuf = "^0.17.0"
-libadwaita = "^0.3.0"
 ref_filter_map = "^1.0.1"
 regex = "^1.5.5"
 async-std = "^1.12.0"
